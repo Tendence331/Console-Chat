@@ -16,8 +16,8 @@ public:
 
     bool checkUser();           // проверка регистрации пользователя
      
-    void sendToUser();          // отправка сообщения пользователю - сначала надо if(!currentUser) Вы не авторизированы
-    void sendToChat();          // отправка сообщения в чат - сначала надо if(!currentUser) Вы не авторизированы
+    void sendToUser();          // отправка сообщения пользователю - сначала надо if(!currentUsers) Вы не авторизированы
+    void sendToChat();          // отправка сообщения в чат - сначала надо if(!currentUsers) Вы не авторизированы
     ~Chat() = default;
 private:
     Chat* _currentUsers = nullptr;                                

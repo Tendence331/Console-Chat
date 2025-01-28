@@ -10,7 +10,7 @@ public:
     std::string getRecipient() const;
     std::string getText() const;
     std::string getSender() const;
-    void sendMessages();
+    void sendMessages();        // просмотр отправленного сообщения
 private:
     std::string _recipient;     // получатель
     std::string _text;          // сообщение
