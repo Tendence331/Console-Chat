@@ -17,6 +17,21 @@ std::string Message::getSender() const
     return _sender;
 }
 
+void Message::setRecipient(const std::string recipient)
+{
+    _recipient = recipient;
+}
+
+void Message::setText(const std::string text)
+{
+    _text = text;
+}
+
+void Message::setSender(const std::string sender)
+{
+    _sender = sender;
+}
+
 void Message::sendMessages()
 {
     std::cout << "Кому: " << _recipient << "От кого: " << _sender << "Сообщение: " << _text << std::endl;
