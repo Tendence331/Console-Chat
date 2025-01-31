@@ -34,5 +34,5 @@ void Message::setSender(const std::string sender)
 
 void Message::sendMessages()
 {
-    std::cout << "Кому: " << _recipient << "От кого: " << _sender << "Сообщение: " << _text << std::endl;
+    std::cout << "Кому: " << _recipient << " От кого: " << _text << " Сообщение: " << _sender << std::endl;
 }
