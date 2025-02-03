@@ -17,6 +17,11 @@ std::string Message::getSender() const
     return _sender;
 }
 
+std::shared_ptr<Message> Message::getnextMessage() const
+{
+    return _nextMess;
+}
+
 void Message::setRecipient(const std::string recipient)
 {
     _recipient = recipient;
@@ -30,6 +35,11 @@ void Message::setText(const std::string text)
 void Message::setSender(const std::string sender)
 {
     _sender = sender;
+}
+
+void Message::setNextMessage(std::shared_ptr<Message> next)
+{
+    _nextMess = next;
 }
 
 void Message::sendMessages()
